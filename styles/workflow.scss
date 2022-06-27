@@ -1,0 +1,78 @@
+.workflow {
+    margin: 120px 60px 0px 60px;
+    &__main-title {
+        margin: 0;
+        font-size: 30px;
+        line-height: 60px;
+        text-transform: uppercase;
+        color: #11223F;
+    }
+    &__line {
+        margin-top: 10px;
+        width: 80px;
+        height: 2px;
+        left: 60px;
+        top: 2030px;
+        background: #1968FC;
+        box-shadow: 0px 2px 0px #D1E1FE;
+    }
+    &__container {
+        margin-top: 48px;
+    }
+    &__connector-line-first {
+        position: absolute;
+        width: 1px;
+        height: 40px;
+        left: 119.5px;
+        top: 2262px;
+        border: 1px dashed #1968FC;
+    }
+    &__connector-line-second {
+        position: absolute;
+        width: 1px;
+        height: 40px;
+        left: 119.5px;
+        top: 2482px;
+        border: 1px dashed #1968FC;
+    }
+    &__step-container {
+        padding: 40px 40px 0px 40px;
+        display: flex;
+    }
+    &__title-container {
+        width: 200px;
+    }
+    &__subtitle {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: #11223F;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 40px;
+        text-transform: uppercase;
+        color: #1967FA;
+    }
+    &__step {
+        background-color: #FFFFFF;
+        position: relative;
+        margin-bottom: 40px;
+    }
+    &__icon {
+        width: 40px;
+        height: 36px;
+    }
+    &__description {
+        padding: 0 40px 40px 40px;
+        margin: 0;
+        margin-top: 10px;
+    }
+    &__small-icon {
+        position: absolute;
+        bottom: -5px;
+        right: -5px;
+    }
+}
