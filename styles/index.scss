@@ -1,0 +1,16 @@
+@import 'breakpoints.scss';
+@import 'header.scss';
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.page {
+    font-family: Mulish;
+    @include for-large-up {
+        background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/BackgroundDecor.png);
+    }
+}
