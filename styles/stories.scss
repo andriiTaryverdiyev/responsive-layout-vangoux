@@ -1,0 +1,68 @@
+.stories {
+    margin: 60px 60px 61px 60px;
+    @include for-large-up {
+        width: 1160px;
+        margin: 120px 160px;
+    }
+    &__title {
+        margin: 0px;
+        font-size: 30px;
+        line-height: 60px;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        color: #11223F;
+        @include for-large-up {
+            margin-left: 40px;
+        }
+    }
+    &__line {
+        margin-top: 10px;
+        width: 80px;
+        height: 2px;
+        background: #1968FC;
+        box-shadow: 0px 2px 0px #D1E1FE;
+    }
+    &__container {
+        margin-top: 38px;
+        @include for-large-up {
+            display: flex;
+            margin-left: 40px;
+        }
+    }
+    &__story {
+        position: relative;
+        @include for-large-up {
+            width: 480px;
+            height: 300px;
+        }
+    }
+    &__story:last-child {
+        margin: 0;
+        margin-top: 40px;
+        @include for-large-up {
+            margin-top: 0;
+            margin-left: 150px;
+        }
+    }
+    &__image {
+        position: absolute;
+        top: 4px;
+        left: 0px;
+    }
+    &__subtitle {
+        margin-left: 60px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 40px;
+        color: #111111;
+    }
+    &__description {
+        margin: 0;
+        margin-top: 20px;
+        margin-left: 60px;
+        font-size: 16px;
+        line-height: 30px;
+        color: #000000
+    }
+}
