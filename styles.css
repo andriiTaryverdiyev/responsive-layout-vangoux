@@ -247,12 +247,22 @@
 .workflow {
   margin: 120px 60px 0px 60px;
 }
+@media screen and (min-width: 1024px) {
+  .workflow {
+    margin: 120px 160px 0px 120px;
+  }
+}
 .workflow__main-title {
   margin: 0;
   font-size: 30px;
   line-height: 60px;
   text-transform: uppercase;
   color: #11223F;
+}
+@media screen and (min-width: 1024px) {
+  .workflow__main-title {
+    margin-left: 40px;
+  }
 }
 .workflow__line {
   margin-top: 10px;
@@ -264,7 +274,15 @@
   box-shadow: 0px 2px 0px #D1E1FE;
 }
 .workflow__container {
+  display: block;
   margin-top: 48px;
+}
+@media screen and (min-width: 1024px) {
+  .workflow__container {
+    display: flex;
+    margin-top: 38px;
+    margin-left: 40px;
+  }
 }
 .workflow__connector-line-first {
   position: absolute;
@@ -274,6 +292,14 @@
   top: 2262px;
   border: 1px dashed #1968FC;
 }
+@media screen and (min-width: 1024px) {
+  .workflow__connector-line-first {
+    width: 70px;
+    height: 1px;
+    left: 485px;
+    top: 1320px;
+  }
+}
 .workflow__connector-line-second {
   position: absolute;
   width: 1px;
@@ -281,6 +307,14 @@
   left: 119.5px;
   top: 2482px;
   border: 1px dashed #1968FC;
+}
+@media screen and (min-width: 1024px) {
+  .workflow__connector-line-second {
+    width: 70px;
+    height: 1px;
+    left: 885px;
+    top: 1359px;
+  }
 }
 .workflow__step-container {
   padding: 40px 40px 0px 40px;
@@ -307,17 +341,145 @@
   background-color: #FFFFFF;
   position: relative;
   margin-bottom: 40px;
+  margin-right: 0px;
+}
+@media screen and (min-width: 1024px) {
+  .workflow__step {
+    width: 320px;
+    height: 220px;
+    margin-bottom: 0;
+    margin-right: 80px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .workflow__step:nth-child(3) {
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .workflow__step:nth-child(5) {
+    margin-top: 80px;
+    margin-right: 0;
+  }
 }
 .workflow__icon {
   width: 40px;
   height: 36px;
+}
+@media screen and (min-width: 1024px) {
+  .workflow__icon {
+    margin-top: 2px;
+  }
 }
 .workflow__description {
   padding: 0 40px 40px 40px;
   margin: 0;
   margin-top: 10px;
 }
+@media screen and (min-width: 1024px) {
+  .workflow__description {
+    margin-top: 20px;
+  }
+}
 .workflow__small-icon {
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+}
+
+.features {
+  margin: 125px 60px 0px 60px;
+}
+@media screen and (min-width: 1024px) {
+  .features {
+    margin: 120px 160px 0px 120px;
+    width: 1165px;
+  }
+}
+.features__main-title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #11223F;
+}
+@media screen and (min-width: 1024px) {
+  .features__main-title {
+    margin-left: 40px;
+  }
+}
+.features__line {
+  margin-top: 10px;
+  width: 80px;
+  height: 2px;
+  left: 60px;
+  top: 2030px;
+  background: #1968FC;
+  box-shadow: 0px 2px 0px #D1E1FE;
+}
+.features__container {
+  margin-top: 48px;
+}
+@media screen and (min-width: 1024px) {
+  .features__container {
+    display: flex;
+    margin-left: 40px;
+  }
+}
+.features__step {
+  position: relative;
+  margin-bottom: 60px;
+  background-color: #FFFFFF;
+}
+@media screen and (min-width: 1024px) {
+  .features__step {
+    margin-bottom: 0;
+    width: 320px;
+    height: 290px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .features__step:nth-child(2) {
+    margin-top: 40px;
+    margin-left: 74px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .features__step:nth-child(3) {
+    margin-top: 80px;
+    margin-left: 86px;
+    margin-right: 0;
+  }
+}
+.features__step-container {
+  display: flex;
+  background-color: #F3F7FF;
+}
+.features__icon {
+  width: 80px;
+}
+@media screen and (min-width: 1024px) {
+  .features__icon {
+    width: 120px;
+  }
+}
+.features__title {
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  color: #11223F;
+}
+.features__description {
+  margin: 0;
+  padding: 30px 40px;
+}
+.features__small-icon {
   position: absolute;
   bottom: -5px;
   right: -5px;

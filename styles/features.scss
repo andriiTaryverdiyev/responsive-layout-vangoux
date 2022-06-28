@@ -1,0 +1,87 @@
+.features {
+    margin: 125px 60px 0px 60px;
+    @include for-large-up {
+        margin: 120px 160px 0px 120px;
+        width: 1165px;
+    }
+    &__main-title {
+        margin: 0;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 60px;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        color: #11223F;
+        @include for-large-up {
+            margin-left: 40px;
+        }
+    }
+    &__line {
+        margin-top: 10px;
+        width: 80px;
+        height: 2px;
+        left: 60px;
+        top: 2030px;
+        background: #1968FC;
+        box-shadow: 0px 2px 0px #D1E1FE;
+    }
+    &__container {
+        margin-top: 48px;
+        @include for-large-up {
+            display: flex;
+            margin-left: 40px;
+        }
+    }
+    &__step {
+        position: relative;
+        margin-bottom: 60px;
+        background-color: #FFFFFF;
+        @include for-large-up {
+            margin-bottom: 0;
+            width: 320px;
+            height: 290px;
+        }
+    }
+    &__step:nth-child(2) {
+        @include for-large-up {
+            margin-top: 40px;
+            margin-left: 74px;
+        }
+    }
+    &__step:nth-child(3) {
+        @include for-large-up {
+            margin-top: 80px;
+            margin-left: 86px;
+            margin-right: 0;
+        }
+    }
+    &__step-container {
+        display: flex;
+        background-color: #F3F7FF;
+    }
+    &__icon {
+        width: 80px;
+        @include for-large-up {
+            width: 120px;
+        }
+    }
+    &__title {
+        margin-left: 20px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 40px;
+        display: flex;
+        align-items: center;
+        color: #11223F;
+    }
+    &__description {
+        margin: 0;
+        padding: 30px 40px;
+    }
+    &__small-icon {
+        position: absolute;
+        bottom: -5px;
+        right: -5px;
+    }
+}

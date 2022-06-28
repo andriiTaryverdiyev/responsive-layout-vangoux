@@ -1,11 +1,17 @@
 .workflow {
     margin: 120px 60px 0px 60px;
+    @include for-large-up {
+        margin: 120px 160px 0px 120px;
+    }
     &__main-title {
         margin: 0;
         font-size: 30px;
         line-height: 60px;
         text-transform: uppercase;
         color: #11223F;
+        @include for-large-up {
+            margin-left: 40px;
+        }
     }
     &__line {
         margin-top: 10px;
@@ -17,7 +23,13 @@
         box-shadow: 0px 2px 0px #D1E1FE;
     }
     &__container {
+        display: block;
         margin-top: 48px;
+        @include for-large-up {
+            display: flex;
+            margin-top: 38px;
+            margin-left: 40px;
+        }
     }
     &__connector-line-first {
         position: absolute;
@@ -26,6 +38,12 @@
         left: 119.5px;
         top: 2262px;
         border: 1px dashed #1968FC;
+        @include for-large-up {
+            width: 70px;
+            height: 1px;
+            left: 485px;
+            top: 1320px;
+        }
     }
     &__connector-line-second {
         position: absolute;
@@ -34,6 +52,12 @@
         left: 119.5px;
         top: 2482px;
         border: 1px dashed #1968FC;
+        @include for-large-up {
+            width: 70px;
+            height: 1px;
+            left: 885px;
+            top: 1359px;
+        }
     }
     &__step-container {
         padding: 40px 40px 0px 40px;
@@ -60,15 +84,39 @@
         background-color: #FFFFFF;
         position: relative;
         margin-bottom: 40px;
+        margin-right: 0px;
+        @include for-large-up {
+            width: 320px;
+            height: 220px;
+            margin-bottom: 0;
+            margin-right: 80px;
+        }
+    }
+    &__step:nth-child(3) {
+        @include for-large-up {
+            margin-top: 40px;
+        }
+    }
+    &__step:nth-child(5) {
+        @include for-large-up {
+            margin-top: 80px;
+            margin-right: 0;
+        }
     }
     &__icon {
         width: 40px;
         height: 36px;
+        @include for-large-up {
+            margin-top: 2px;
+        }
     }
     &__description {
         padding: 0 40px 40px 40px;
         margin: 0;
         margin-top: 10px;
+        @include for-large-up {
+            margin-top: 20px;
+        }
     }
     &__small-icon {
         position: absolute;
